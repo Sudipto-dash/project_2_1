@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_margin="12dp">
+
+            <ImageButton
+                android:id="@+id/imageButtonSpotify"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:onClick="spotify"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/spotify" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageButton
+                    android:id="@+id/imageButtonSound"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:onClick="sound"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/sound" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <ImageButton
+                        android:id="@+id/imageButtonHungama"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:onClick="hungama"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/hungama" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <ImageButton
+                            android:id="@+id/imageButtonGanna"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:onClick="ganna"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/ganna" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

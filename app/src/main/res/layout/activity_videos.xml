@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideosActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_margin="12dp">
+
+            <ImageButton
+                android:id="@+id/imageButtonUtube"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:onClick="utube"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/youtube" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageButton
+                    android:id="@+id/imageButtonNetFlix"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:onClick="flix"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/netflix" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <ImageButton
+                        android:id="@+id/imageButtonDailyMotion"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:onClick="motion"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/daily" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <ImageButton
+                            android:id="@+id/imageButtonHulu"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:onClick="hulu"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/hulu" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

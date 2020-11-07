@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SportsActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lay1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_margin="12dp">
+
+            <ImageButton
+                android:id="@+id/imageButtonEspn"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:onClick="espnSports"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/espn" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageButton
+                    android:id="@+id/imageButtonCricbuzz"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:onClick="cbSports"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/cricbuzz" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <ImageButton
+                        android:id="@+id/imageButtonAry"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:onClick="arySports"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/ary" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <ImageButton
+                            android:id="@+id/imageButtonFox"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:onClick="foxSports"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/fox" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                            <ImageButton
+                                android:id="@+id/imageButtonSky"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:scaleType="centerInside"
+                                android:onClick="skySports"
+                                app:srcCompat="@drawable/sky" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_margin="12dp">
+
+            <ImageButton
+                android:id="@+id/imageButtonBBC"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:onClick="bbc"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/bbc" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageButton
+                    android:id="@+id/imageButtonNY"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:onClick="ny"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/nytimes" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <ImageButton
+                        android:id="@+id/imageButtonCNN"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:onClick="cnn"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/cnn" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <ImageButton
+                            android:id="@+id/imageButtonGurdian"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:onClick="gurdian"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/gurdian" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

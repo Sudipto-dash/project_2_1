@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+
+    <ImageButton
+        android:id="@+id/imageButtonMusic"
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:onClick="music"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonNews"
+        app:layout_constraintVertical_bias="0.106"
+        app:srcCompat="@drawable/music" />
+
+    <ImageButton
+        android:id="@+id/imageButtonNews"
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:onClick="news"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonSports"
+        app:layout_constraintVertical_bias="0.054"
+        app:srcCompat="@drawable/news" />
+
+    <ImageButton
+        android:id="@+id/imageButonVideo"
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="videos"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonMusic"
+        app:layout_constraintVertical_bias="0.327"
+        app:srcCompat="@drawable/video" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSports"
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:onClick="sports"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"
+        app:srcCompat="@drawable/sports" />
+</androidx.constraintlayout.widget.ConstraintLayout>
